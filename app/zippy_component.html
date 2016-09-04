@@ -1,0 +1,42 @@
+<div class="conta">
+  <div class="hamburgermenu" (click)="CntrlPanel()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+<div  [class.asset]="ZippyPoto" >
+ <div class="col-md-12">
+        <div class="panel panel-default" align="center">
+          <div class="panel-header" data-toggle="collapse" data-target="#head"
+           (click)="ZippyControl()">
+           <i class="glyphicon pull-right"
+           [style.color]="ZippChange ? orange : grey"
+           [class.glyphicon-chevron-up]="!ZippChange" [class.glyphicon-chevron-down]="ZippChange">
+            </i>
+          <i class="glyphicon glyphicon-globe pull-left"></i> <h3> {{title.zippy1}}</h3>
+          </div>      
+          <div class="panel-body collapse" id="head">
+          <p>Nice to meet you , r u there...</p>
+           </div>
+         </div>
+        </div>
+
+
+
+         <div class="col-md-12">
+        <div class="panel panel-default panel_panda" align="center">
+          <div class="panel-header" data-toggle="collapse" data-target="#head1"
+           (click)="ZippyTanda()">
+           <i class="glyphicon pull-right"
+           [class.glyphicon-chevron-up]="!ZippyPanda" [class.glyphicon-chevron-down]="ZippyPanda">
+            </i>
+          <i class="glyphicon glyphicon-globe pull-left"></i> <h3> {{title.zippy2}}</h3>
+          </div>
+          <div class="panel-body collapse" id="head1">
+          <small>Really awsome..</small>
+           </div>
+         </div>
+        </div>
+        </div>
